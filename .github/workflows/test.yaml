@@ -27,7 +27,7 @@ jobs:
     outputs:
       go-version: ${{ steps.go-version.outputs.go-version }}
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - id: go-version
         run: echo "go-version=$(sed -ne '/^go /s/^go //p' go.mod)" >> "$GITHUB_OUTPUT"
         working-directory: fixtures
